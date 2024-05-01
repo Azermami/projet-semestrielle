@@ -1,0 +1,28 @@
+version: '3'
+services:
+  web:
+    build: site
+    ports:
+      - "80:80"
+    volumes:
+      - ./www:/var/www/html/
+      - ./server/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./server/apache2.conf:/etc/apache2/apache2.conf
+      - ./server/php.ini:/usr/local/etc/php/php.ini
+
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: projet
+      POSTGRES_PASSWORD: projet
+      POSTGRES_DB: esgi
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
+
+volumes:
+  postgres_data:

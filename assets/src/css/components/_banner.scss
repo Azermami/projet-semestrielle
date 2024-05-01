@@ -1,0 +1,24 @@
+@use "sass:color"
+
+.banner{
+    
+    aspect-ratio: 100/42;
+    @include backround-cover;
+    position: relative;
+    &--text{
+
+        &::before:'';
+        position: absolute;
+        top: 0;
+        left: 0
+        right : 0;
+        bottom: 0;
+        background-color:color.adjust($textColor,$alpha:-0.6);
+    }
+    .p{
+        font-weight: bold;
+        color:
+    }
+}
+
+

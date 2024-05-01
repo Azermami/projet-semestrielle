@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="dist/main.css" />
+	<title>Page de connexion</title>
+	<style>
+		main {
+			padding: 0 1rem;
+		}
+	</style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+
+<div class="container">
+    <div class="left">
+       <img src="images/image.png" alt="image1"/>
+    </div>
+    <div class="right">
+        <h2>Welcome to ... !</h2>
+        <form action="login.php" method="post">
+            <label>  I am a</label>
+            <label><input type="radio" name="user_type" value="user" checked> User</label>
+            <label><input type="radio" name="user_type" value="admin"> Admin</label><br><br>
+            <input type="text" name="email" placeholder="Email"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <label><input type="checkbox" name="remember"> Remember me</label><br>
+            <a href="forgot_password.php" class="forgot-password">Forgot password?</a><br><br>
+
+            <a href="register.php">register</a><br><br>
+                
+                <button type="submit"class="button button--outline">login</button>
+            
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+

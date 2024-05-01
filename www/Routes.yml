@@ -1,0 +1,107 @@
+/:
+  Controller: "Main"
+  Action: "home"
+
+/login:
+  Controller: "Security"
+  Action: "login"
+
+/register:
+  Controller: "Security"
+  Action: "register"
+
+/logout:
+  Controller: "Security"
+  Action: "logout"
+
+/ajout-utilisateur:
+  Controller: "User"
+  Action: "add"
+
+/del-utilisateur:
+  Controller: "User"
+  Action: "delete"
+
+/show-utilisateur:
+  Controller: "User"
+  Action: "show"
+
+/list-utilisateurs:
+  Controller: "User"
+  Action: "list"
+
+/maj-utilisateurs:
+  Controller: "User"
+  Action: "edit"
+
+/add-media:
+  Controller: "Media"
+  Action: "add"
+
+/edit-media:
+  Controller: "Media"
+  Action: "edit"
+
+/delete-media:
+  Controller: "Media"
+  Action: "delete"
+
+/show-projet:
+  Controller: "Projet"
+  Action: "show"
+
+/add-projet:
+  Controller: "Projet"
+  Action: "add"
+
+/modifier-projet:
+  Controller: "Projet"
+  Action: "edit"
+
+/supprimer-projet:
+  Controller: "Projet"
+  Action: "delete"
+
+/ajout-comment:
+  Controller: "Comment"
+  Action: "add"
+
+/delete-comment:
+  Controller: "Comment"
+  Action: "delete"
+
+/signal-comment:
+  Controller: "Comment"
+  Action: "signal"
+
+/Search:
+  Controller: "Search"
+  Action: "recherche"
+
+/error:
+  Controller: "Erreur"
+  Action: "error"
+
+/show-category:
+  Controller: "Category"
+  Action: "show"
+
+/add-category:
+  Controller: "Category"
+  Action: "add"
+
+/edit-category:
+  Controller: "Category"
+  Action: "edit"
+
+/delete-category:
+  Controller: "Category"
+  Action: "delete"
+
+/show-theme:
+  Controller: "Theme"
+  Action: "show"
+
+/show-analytics:
+  Controller: "Analytics"
+  Action: "show"
